@@ -1,5 +1,11 @@
+import sys
+import os
 from pathlib import Path
-from floorplan_analyzer import FloorplanAnalyzer
+
+# Add project root to Python path
+sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
+
+from src.floorplan_analyzer import FloorplanAnalyzer
 
 def main():
     # Initialize analyzer
